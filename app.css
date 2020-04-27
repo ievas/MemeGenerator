@@ -1,0 +1,160 @@
+body{
+    font-family: Andale Mono, monospace;
+    width: 100%;
+    
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input{
+    width:800px;
+    height:30px;
+    margin-left: 15px;
+}
+
+label{
+    margin-left: 15px;
+}
+
+#add{
+    display: block;
+    margin-left:auto; 
+    margin-right:50px;
+    color: rgb(242, 255, 252);
+    box-shadow:inset 0px 1px 3px 0px #1fd9c0;
+	background: #8bd1be;
+	background-color:rgb(105, 199, 206);
+	border-radius:5px;
+	border:1px solid #566963;
+    /*display:inline-block;*/
+    font-family: Andale Mono, monospace;
+	cursor: pointer;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+#add:hover {
+    color: lightskyblue;
+    background:rgb(128, 231, 204);
+    background-color:#3b9292;
+}
+
+p{
+    text-align: center;
+}
+
+#form-container{
+    /*background-color: rgb(242, 255, 252);*/
+    
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+}
+
+#meme-display{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    /*width: 35%;*/
+    /*align-items: baseline;
+    align-content: flex-start;
+    /*width: 100%;*/
+    
+}
+
+#meme{
+    /*height: auto; 
+    width: auto;*/
+    padding: 10px;
+    position: relative;
+    max-width: 320px; 
+    max-height: 320px;
+    /*width: 32%;*/
+}
+
+#meme-top, #meme-bottom{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: auto;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+}
+
+#meme-top{
+    max-width: 280px;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    font-size: 2.5rem;
+    
+}
+
+#meme-bottom{
+    max-width: 280px;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    font-size: 2rem;
+}
+
+/*Modal from: https://sabe.io/tutorials/how-to-create-modal-popup-box*/
+
+#modal-container{
+    display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/**#modal-content{
+    background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}*/
+
+#remove{
+    position: absolute;
+    float:right;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#remove:hover{
+    color: #6c7c7c;
+}
+
+.show{
+    opacity: 0.5;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+
